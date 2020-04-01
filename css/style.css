@@ -1,0 +1,128 @@
+/* Required height of parents of the Half Page Carousel for proper displaying carousel itself */
+html,
+body,
+.view {
+  height: 100%; }
+
+@media (max-width: 740px) {
+  .full-page-intro {
+    height: 1000px; } }
+
+/* Half Page Carousel itself*/
+.carousel {
+  height: 100%; }
+  .carousel .carousel-inner {
+    height: 100%; }
+    .carousel .carousel-inner .carousel-item,
+    .carousel .carousel-inner .active {
+      height: 100%; }
+
+/* Adjustment for mobile devices*/
+@media (max-width: 776px) {
+  .carousel {
+    height: 100%; } }
+
+
+.navbar {
+  background-color: rgba(0, 0, 0, 0.2); }
+
+.top-nav-collapse {
+  background-color: #1C2331; }
+
+/* Adding color to the Navbar on mobile */
+@media only screen and (max-width: 768px) {
+  .navbar {
+    background-color: #1C2331; } }
+
+/* Footer color -same as navbar */
+.page-footer {
+  background-color: #1C2331; }
+
+  
+  body {
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    background-image:-webkit-radial-gradient(grey, rgb(247, 240, 240));
+    background-position: center center;
+    background-repeat: no-repeat;
+    background-size: cover;
+  
+    background-attachment: fixed;
+}
+
+h4{
+    text-align: center ;
+    
+}
+.navbar-brand {
+    padding: 0;
+    margin: 0;
+ }
+
+.jumbotron {
+    margin:0;
+    padding: 450px;
+    background-position: relative;
+    background-image: url("../images/slide1.jpg");
+    background-size: cover;
+    background-repeat: no-repeat;
+    color: white;
+}
+
+.row-content {
+    padding: 50px 0;
+    border-bottom: 1px ridge;
+    min-height: 200px;
+}
+
+.navbar {
+    position: fixed;
+    background-position: absolute;
+}
+
+.navbar-link, a.navbar-item {
+    text-decoration: none;
+}
+
+.navbar-item {
+    display: block;
+    flex-grow: 0;
+    flex-shrink: 0;
+    
+}
+
+.navbar-item, .navbar-link {
+    color: #4a4a4a;
+    display: block;
+    line-height: 1.5;
+    padding: .5rem .75rem;
+    position: relative;
+
+}
+/* footer and etc */
+
+.footer {
+    background-image: linear-gradient(rgb(134, 134, 155), white);
+    padding: 20px 0px;
+    color: black;
+    width: 100%;
+    bottom: 0;
+    left: 0;
+
+}
+
+
+.modal-backdrop {
+    z-index: auto;
+}
+
+.close {
+    color:white;
+}
+
+.card {
+    display:block;
+    position:relative;
+    padding: .5em;
+    margin-top:40PX;
+    
+}

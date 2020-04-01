@@ -1,0 +1,351 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <!-- Required meta tags always come first -->
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+
+  <!-- Bootstrap CSS -->
+  <link rel="stylesheet" href="node_modules/bootstrap/dist/css/bootstrap.min.css" />
+
+
+  <!-- Additional CSS must be placed after Bootstrap CSS -->
+  <link rel="stylesheet" href="node_modules/font-awesome/css/font-awesome.min.css" />
+  <link rel="stylesheet" href="node_modules/bootstrap-social/bootstrap-social.css" />
+  <link rel="stylesheet" href="css/style.css" />
+  <!-- MD Bootstrap -->
+  <link href="css/mdb.min.css" rel="stylesheet">
+
+
+  <title>My Site</title>
+
+  <!-- Backgrond image --
+  <style>
+        body {
+           
+            background-image:url("images/bg.jpeg")
+        }
+    </style> -->
+
+</head>
+
+<body>
+
+  <!-- navbars -->
+
+
+
+
+
+  <div class="row mx-auto">
+    <span class="navbar-text ml-auto"></span>
+    <hr class="navbar-divider ">
+    <ul class="navbar-nav nav-flex-icons">
+      <li class="nav-item">
+        <i class="fa fa-facebook-f fa-lg"></i>
+        </a>
+      </li>
+      <li class="nav-item">
+        <a href="#" class="nav-link">
+          <i class="fa fa-twitter fa-lg"></i>
+        </a>
+      </li>
+      <li class="nav-item">
+        <a href="#" class="nav-link" target="_blank">
+          <i class="fa fa-instagram fa-lg mr-2"></i>
+        </a>
+
+        <!-- Login icon-->
+      <li class="nav-item"></li>
+      <a button type="button" class="btn btn-rounded btn-success" data-toggle="modal" data-target="#loginModal">
+        </button>
+        <i class="fa fa-user mr-2"></i> Login</a>
+      </li>
+    </ul>
+    </nav>
+  </div>
+
+
+
+ <!--Modal: Login / Register Form-->
+<div class="modal fade" id="loginModal" tabindex="-1" role="dialog" aria-labelledby="myModalLabel" aria-hidden="true">
+  <div class="modal-dialog cascading-modal" role="document">
+    <!--Content-->
+    <div class="modal-content">
+
+      <!--Modal cascading tabs-->
+      <div class="modal-c-tabs">
+
+        <!-- Nav tabs -->
+        <ul class="nav nav-tabs md-tabs tabs-2 light-blue darken-3" role="tablist">
+          <li class="nav-item">
+            <a class="nav-link active" data-toggle="tab" href="#panel7" role="tab"><i class="fa fa-user mr-1"></i>
+              Login</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" data-toggle="tab" href="#panel8" role="tab"><i class="fa fa-user-plus mr-1"></i>
+              Register</a>
+          </li>
+        </ul>
+
+        <!-- Tab panels -->
+        <div class="tab-content">
+          <!--Panel 7-->
+          <div class="tab-pane fade in show active" id="panel7" role="tabpanel">
+
+            <!--Body-->
+            <div class="modal-body mb-1">
+              <div class="md-form form-sm mb-5">
+                <i class="fa fa-envelope prefix"></i>
+                <input type="email" id="modalLRInput10" class="form-control form-control-sm validate">
+                <label data-error="wrong" data-success="right" for="modalLRInput10">Your email</label>
+              </div>
+
+              <div class="md-form form-sm mb-4">
+                <i class="fas fa-lock prefix"></i>
+                <input type="password" id="modalLRInput11" class="form-control form-control-sm validate">
+                <label data-error="wrong" data-success="right" for="modalLRInput11">Your password</label>
+              </div>
+              <div class="text-center mt-2">
+                <button class="btn btn-info">Log in <i class="fas fa-sign-in ml-1"></i></button>
+              </div>
+            </div>
+            <!--Footer-->
+            <div class="modal-footer">
+              <div class="options text-center text-md-right mt-1">
+                <p>Not a member? <a href="#" class="blue-text">Sign Up</a></p>
+                <p>Forgot <a href="#" class="blue-text">Password?</a></p>
+              </div>
+              <button type="button" class="btn btn-outline-info waves-effect ml-auto" data-dismiss="modal">Close</button>
+            </div>
+
+          </div>
+          <!--/.Panel 7-->
+
+          <!--Panel 8-->
+          <div class="tab-pane fade" id="panel8" role="tabpanel">
+
+            <!--Body-->
+            <div class="modal-body">
+              <div class="md-form form-sm mb-5">
+                <i class="fas fa-envelope prefix"></i>
+                <input type="email" id="modalLRInput12" class="form-control form-control-sm validate">
+                <label data-error="wrong" data-success="right" for="modalLRInput12">Your email</label>
+              </div>
+
+              <div class="md-form form-sm mb-5">
+                <i class="fas fa-lock prefix"></i>
+                <input type="password" id="modalLRInput13" class="form-control form-control-sm validate">
+                <label data-error="wrong" data-success="right" for="modalLRInput13">Your password</label>
+              </div>
+
+              <div class="md-form form-sm mb-4">
+                <i class="fas fa-lock prefix"></i>
+                <input type="password" id="modalLRInput14" class="form-control form-control-sm validate">
+                <label data-error="wrong" data-success="right" for="modalLRInput14">Repeat password</label>
+              </div>
+
+              <div class="text-center form-sm mt-2">
+                <button class="btn btn-info">Sign up <i class="fa fa-sign-in ml-1"></i></button>
+              </div>
+
+            </div>
+            <!--Footer-->
+            <div class="modal-footer">
+              <div class="options text-right">
+                <p class="pt-1">Already have an account? <a href="#" class="blue-text">Log In</a></p>
+              </div>
+              <button type="button" class="btn btn-outline-info waves-effect ml-auto" data-dismiss="modal">Close</button>
+            </div>
+          </div>
+          <!--/.Panel 8-->
+        </div>
+
+      </div>
+    </div>
+    <!--/.Content-->
+  </div>
+</div>
+
+
+
+  <!-- JUMBOTRON SECTION -->
+  <header class="jumbotron jumbotron-fluid">
+    <div class="container">
+      <div class="row">
+        <div class="col-4 col-sm-3 col-md-2">
+          <img src="" class="img-fluid" />
+        </div>
+        <h1>Tired of eating Fast Food?</h1>
+        <h2>Our aspiring local chefs can come to your kitchen and cook you a fantastic meal!</h2>
+      </div>
+    </div>
+    </div>
+  </header>
+
+  <div class="row text-center wow fadeIn">
+
+    <!--Grid column-->
+    <div class="col-lg-4 col-md-12 mb-4">
+      <div class="card flex-column">
+        <div class="card-header align-self-center">
+          <h4>
+            <i class="fa fa-heart fa-lg mr-2" style="color:red"></i>
+            <strong>Date Night</strong>
+          </h4>
+        </div>
+
+        <!--Card content-->
+        <div class="card-body">
+
+          <h2 class="card-title pricing-card-title mb-4">$99
+            <small class="text-muted">/ per visit</small>
+          </h2>
+
+          <ol class="list-unstyled mb-4">
+            <li>On-Demand Service
+              <i class="fa fa-check green-text ml-1"></i>
+            </li>
+            <hr>
+            <li>Perfect for a date night
+              <i class="fa fa-check green-text ml-1"></i>
+            </li>
+            <hr>
+            <li>Makes a perfect gift
+              <i class="fa fa-check green-text ml-1"></i>
+            </li>
+            <hr>
+            <li>One entre, two side dish
+              <i class="fa fa-check green-text ml-1"></i>
+            </li>
+          </ol>
+
+          <button type="button" class="btn btn-lg btn-block btn-success">Get Started</button>
+
+        </div>
+
+      </div>
+      <!--/.Card-->
+
+    </div>
+    <!--Grid column-->
+
+    <!--Grid column-->
+    <div class="col-lg-4 col-md-6 mb-4">
+
+      <!--Card-->
+      <div class="card">
+
+        <!-- Card header -->
+        <div class="card-header">
+          <h4 class="text-lg-center">
+            <i class="fa fa-star fa-lg mr-2" style="color:gold"></i>
+            <strong>Most Popular</strong>
+          </h4>
+        </div>
+
+        <!--Card content-->
+        <div class="card-body">
+
+          <h2 class="card-title pricing-card-title mb-4">$249
+            <small class="text-muted">/ mo</small>
+          </h2>
+
+          <ol class="list-unstyled mb-4">
+            <li>Three visits per month
+              <i class="fa fa-check green-text ml-1"></i>
+            </li>
+            <hr>
+            <li>One delicious entre, two sides
+              <i class="fa fa-check green-text ml-1"></i>
+            </li>
+            <hr>
+            <li>Enough portion for second meal
+              <i class="fa fa-check green-text ml-1"></i>
+            </li>
+            <hr>
+            <li>Choices of various cuisine
+              <i class="fa fa-check green-text ml-1"></i>
+            </li>
+          </ol>
+
+          <button type="button" class="btn btn-lg btn-block btn-primary">Get started</button>
+
+        </div>
+
+      </div>
+      <!--/.Card-->
+
+    </div>
+
+    <div class="col-lg-4 col-md-6 mb-4">
+      <!--Card-->
+      <div class="card">
+        <div class="card-header">
+          <h4>
+            <i class="fa fa-fire fa-lg mr-2" style="color:rgba(255, 115, 0, 0.822)"></i>
+            <strong>Premium</strong>
+          </h4>
+        </div>
+        <div class="card-body">
+          <h2 class="card-title pricing-card-title mb-4">$349
+            <small class="text-muted">/ mo</small>
+          </h2>
+
+          <ol class="list-unstyled mb-4">
+            <li>Upto 4 visits per month
+              <i class="fa fa-check green-text ml-1"></i>
+            </li>
+            <hr>
+            <li>One delicious entre 
+              <i class="fa fa-check green-text ml-1"></i>
+            </li>
+            <hr>
+            <li>Two sides
+              <i class="fa fa-check green-text ml-1"></i>
+            </li>
+            <hr>
+            <li>Upto four servings
+              <i class="fa fa-check green-text ml-1"></i>
+            </li>
+          </ol>
+
+          <button type="button" class="btn btn-lg btn-block btn-orange">Get started</button>
+
+        </div>
+      </div>
+    </div>
+  </div>
+
+  </main>
+  <!--Main layout-->
+
+
+
+
+
+  <!-- Footer -->
+  <footer class="page-footer text-center font-small mt-5 wow fadeIn">
+
+    <!--Call to action-->
+    <div class="pt-4">
+      <a class="btn  btn-outline-white" href="#" target="_blank" role="button">Join our team
+        <i class="fa fa-check-circle ml-2"></i>
+      </a>
+      <a class="btn btn-outline-white" href="#" target="_blank" role="button">contact us
+        <i class="fa fa-envelope ml-2"></i>
+      </a>
+    </div>
+
+
+  </footer>
+
+  <!-- jQuery must come first, then Popper.js, then the Bootstrap JavaScript plugins.-->
+  <script src="node_modules/jquery/dist/jquery.slim.min.js"></script>
+  <script src="node_modules/popper.js/dist/umd/popper.min.js"></script>
+  <script src="node_modules/bootstrap/dist/js/bootstrap.min.js"></script>
+
+</body>
+
+</html>
