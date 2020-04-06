@@ -20,25 +20,27 @@ h4{
     text-align: center ;
     
 }
+
+.background {
+
+    background-color: transparent;
+}
+
 .navbar-brand {
     padding: 0;
     margin: 0;
  }
 
-.jumbotron {
+.jumbotron-fluid {
     margin:0;
-    padding: 450px;
+    padding: 400px;
     background-position:relative;
-    background-image: url("../images/slide1.jpg");
     background-size: cover;
     background-repeat: no-repeat;
-    color: white;
     
 }
 
-.jumbotron .container{
-    position: relative;
-}
+
 
 .carousel-caption {
     background-color: black;
