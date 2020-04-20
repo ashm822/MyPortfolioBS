@@ -1,0 +1,624 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <!-- Required meta tags always come first -->
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+
+  <!-- Bootstrap CSS -->
+  <link rel="stylesheet" href="node_modules/bootstrap/dist/css/bootstrap.min.css" />
+
+
+  <!-- Additional CSS must be placed after Bootstrap CSS -->
+  <link rel="stylesheet" href="node_modules/font-awesome/css/font-awesome.min.css" />
+  <link rel="stylesheet" href="node_modules/bootstrap-social/bootstrap-social.css" />
+  <link rel="stylesheet" href="css/style.css" />
+  <!-- MD Bootstrap -->
+  <link rel="stylesheet" href="css/mdb.min.css">
+
+
+
+  <title>My Site</title>
+
+  <!-- BG Image 
+  
+  <style>
+        body {
+           
+            background-image:url("images/bg2.jpg")
+        }
+    </style> -->
+
+</head>
+
+<body>
+
+  <!-- navbars -->
+  <nav class="navbar navbar-expand-lg navbar-dark bg-dark sticky-top">
+    <a class="navbar-brand mr-2" href="#"><img src="images/logo.png" width="80" /> </a>
+    <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#NavDropdown"
+      aria-controls="navbarNavDropdown" aria-expanded="false" aria-label="Toggle navigation">
+      <span class="navbar-toggler-icon"></span>
+    </button>
+    <div class="collapse navbar-collapse" id="NavDropdown">
+      <ul class="navbar-nav">
+        <li class="nav-item active">
+          <a class="nav-link" href="#"> <i class="fa fa-home fa-lg mr-2" style="color:greenyellow"></i>Home</a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link ml-4" href="how.html"><i class="fa fa-question-circle fa-lg mr-2"
+              style="color:lightblue"></i>About us</a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link ml-4" href="OurChefs.html"><i class="fa fa-users fa-lg mr-2" style="color:orange"></i>The
+            Chefs</a>
+        </li>
+
+        <!-- Navbar DropDown -->
+        <li class="nav-item dropdown">
+          <a class="nav-link dropdown-toggle ml-4" id="navDropdownMenu" role="button" data-toggle="dropdown"
+            aria-haspopup="true" aria-expanded="false"><i class="fa fa-book fa-lg mr-2"></i>
+            Our Menu
+          </a>
+          <div class="dropdown-menu" aria-labelledby="navDropdownMenuLink">
+            <a class="dropdown-item" href="Menu.html">Indian</a>
+              <hr>
+            <a class="dropdown-item" href="Menu.html">Indonesian</a>
+              <hr>
+            <a class="dropdown-item" href="Menu.html">Chinese</a>
+            <div class="dropdown-divider"></div>
+            <a class="dropdown-item" href="Menu.html">Spanish</a>
+              <hr>
+            <a class="dropdown-item" href="Menu.html">Vegeterian</a>
+          </div>
+        </li>
+      </ul>
+    </div>
+    <hr class="navbar-divider">
+    <ul class="navbar-nav nav-flex-icons">
+      <li class="nav-item">
+        <a href="tel:215-555-1234" class="nav-link">
+          <i class="fa fa-phone fa-lg mt-2 mr-4"> 215-555-1234</i>
+        </a>
+      </li>
+
+      <!-- Login icon-->
+      <li class="nav-item"></li>
+      <a button type="button" class="btn btn-rounded btn-success" data-toggle="modal" data-target="#loginModal">
+        </button>
+        <i class="fa fa-user mr-2"></i> Login</a>
+      </li>
+    </ul>
+  </nav>
+  </div>
+
+  <!--Modal: Login / Register Form-->
+  <div class="modal fade" id="loginModal" tabindex="-1" role="dialog" aria-labelledby="myModalLabel" aria-hidden="true">
+    <div class="modal-dialog cascading-modal" role="document">
+      <div class="modal-content">
+        <div class="modal-c-tabs">
+
+          <!-- Nav tabs -->
+          <ul class="nav nav-tabs md-tabs tabs-2" role="tablist">
+            <li class="nav-item">
+              <a class="nav-link active" data-toggle="tab" href="#Login" role="tab"><i class="fa fa-user mr-1"></i>
+                Login</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" data-toggle="tab" href="#register" role="tab"><i class="fa fa-user-plus mr-1"></i>
+                Register</a>
+            </li>
+          </ul>
+
+          <!-- Tab panels -->
+          <div class="tab-content">
+            <div class="tab-pane fade in show active" id="Login" role="tabpanel">
+              <div class="modal-body mb-1">
+                <div class="md-form form-sm mb-5">
+                  <i class="fa fa-envelope prefix"></i>
+                  <input type="email" id="modalLRInput10" class="form-control form-control-sm validate">
+                  <label data-error="wrong" data-success="right" for="modalLRInput10">Your email</label>
+                </div>
+
+                <div class="md-form form-sm mb-4">
+                  <i class="fa fa-lock prefix"></i>
+                  <input type="password" id="modalLRInput11" class="form-control form-control-sm validate">
+                  <label data-error="wrong" data-success="right" for="modalLRInput11">Your password</label>
+                </div>
+                <div class="text-center mt-2">
+                  <button class="btn btn-success">Log in <i class="fa fa-sign-in ml-1"></i></button>
+                </div>
+              </div>
+
+              <!-- Modal Footer-->
+              <div class="modal-footer">
+                <div class="options text-center text-md-right mt-1">
+                  <p>Not a member? <a href="#" class="blue-text">Sign Up</a></p>
+                  <p>Forgot <a href="#" class="blue-text">Password?</a></p>
+                </div>
+                <button type="button" class="btn btn-light waves-effect ml-auto" data-dismiss="modal">Close</button>
+              </div>
+            </div>
+
+
+            <div class="tab-pane fade" id="register" role="tabpanel">
+              <!--Body-->
+              <div class="modal-body">
+                <div class="md-form form-sm mb-5">
+                  <i class="fa fa-envelope prefix"></i>
+                  <input type="email" id="modalLRInput12" class="form-control form-control-sm validate">
+                  <label data-error="wrong" data-success="right" for="modalLRInput12">Your email</label>
+                </div>
+
+                <div class="md-form form-sm mb-5">
+                  <i class="fa fa-lock prefix"></i>
+                  <input type="password" id="modalLRInput13" class="form-control form-control-sm validate">
+                  <label data-error="wrong" data-success="right" for="modalLRInput13">Your password</label>
+                </div>
+
+                <div class="md-form form-sm mb-4">
+                  <i class="fa fa-lock prefix"></i>
+                  <input type="password" id="modalLRInput14" class="form-control form-control-sm validate">
+                  <label data-error="wrong" data-success="right" for="modalLRInput14">Repeat password</label>
+                </div>
+
+                <div class="text-center form-sm mt-2">
+                  <button class="btn btn-success">Sign up <i class="fa fa-sign-in ml-1"></i></button>
+                </div>
+              </div>
+
+              <!-- Modal Footer-->
+              <div class="modal-footer">
+                <div class="options text-right">
+                  <p class="pt-1">Already have an account? <a href="#" class="blue-text">Log In</a></p>
+                </div>
+                <button type="button" class="btn btn-light waves-effect ml-auto" data-dismiss="modal">Close</button>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+
+
+  <!-- JUMBOTRON SECTION -->
+  <div class="jumbotron-fluid pb-5" style="background-image: url(/images/slide1.jpg);">
+    <div class="text-white text-center bg-black  py-5 px-4">
+      <div class="col">
+  
+        <!-- Content -->
+        <h5 class="h5 orange-text">Get a personal Chef today!  </h5>
+        <h2 class="card-title h2 my-4 py-2">Tired of eating fast food? <br />
+          Tired of going out to restaurants and spending $100+ on foods that aren't even fresh? <br />
+          Do you want a local chef that comes to your home and cooks you a fantastic full-course meal?</h2>
+        <p class="mb-4 pb-2 px-md-5 mx-md-5">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Pariatur obcaecati vero aliquid libero doloribus ad, unde tempora maiores, ullam, modi qui quidem minima debitis perferendis vitae cumque et quo impedit.</p>
+        <a class="btn peach-gradient"><i class="fa fa-clone left"></i> Get Started</a>
+  
+      </div>
+    </div>
+  </div>
+  </header>
+
+  <!-- body container -->
+  <div class="container mt-5">
+    <div class="row row-content align-items-center text-light">
+      <div class="col-sm-4 col-md-3 ">
+        <img src="images/step1.png" width="150">
+      </div>
+
+      <div class="col">
+        <div class="media">
+          <div class="media-body align-self-center">
+            <h3>Choose a chef</h3>
+            <p class="d-md-block d-none">Lorem ipsum dolor sit amet consectetur adipisicing elit. Rerum quae sint, rem
+              deserunt illum eius facere corporis blanditiis ipsa. Atque aspernatur tenetur vel perferendis totam
+              repudiandae culpa placeat exercitationem sed.</p>
+            <p><a class="btn btn-success" href="#" role="button">View Chefs &raquo;</a></p>
+
+            <hr class="white">
+          </div>
+          <img class="d-flex ml-3 img-thumbnail" src="images/block1.jpg" width="300" alt="HotChef1" />
+
+        </div>
+      </div>
+    </div>
+  </div>
+
+
+  <div class="container">
+    <div class="row row-content align-items-center text-light">
+      <div class="col-sm-4 col-md-3">
+        <img src="images/step2.png" width="150">
+      </div>
+      <div class="col">
+        <div class="media">
+          <div class="media-body align-self-center">
+            <h3 class="text-sm-left">Choose Menu</h3>
+            <p class="d-md-block d-none" class="d-sm-block d-none">Lorem ipsum dolor sit amet consectetur, adipisicing
+              elit. Quam reprehenderit, esse expedita ducimus autem nisi eveniet aspernatur maxime! Fuga doloribus rem
+              incidunt dignissimos consequuntur. Quibusdam doloremque nulla facere nihil est?</p>
+            <p><a class="btn btn-success" href="#" role="button">View Menu &raquo;</a></p>
+
+            <hr class="white">
+
+          </div>
+          <img class="d-flex ml-3 img-thumbnail" src="images/menu1.jpg" width="300" height="350" width=""
+            alt="image2" />
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <div class="container">
+    <div class="row row-content align-items-center text-light">
+      <div class="col-sm-4 col-md-3">
+        <img src="images/step3.png" width="150">
+      </div>
+      <div class="col">
+        <div class="media">
+          <div class="media-body align-self-center">
+            <h3 class="text-sm-left">Schedule visit</h3>
+            <p class="d-md-block d-none">Lorem ipsum dolor sit amet consectetur adipisicing elit. Provident,
+              dignissimos! Repudiandae, dicta obcaecati placeat corrupti asperiores incidunt rem vel explicabo non ad
+              perspiciatis voluptatem quibusdam voluptate provident ea iure laboriosam.
+            </p>
+            <p><a class="btn btn-success" href="#" role="button">View Price &raquo;</a></p>
+            <hr class="white">
+          </div>
+          <img class="d-flex ml-3 img-fluid img-thumbnail" src="images/chef2.jpg" width="300" alt="image3">
+        </div>
+      </div>
+    </div>
+  </div>
+  <!--  -----------------------------------------------------------------------------------  -->
+
+  <div class="container my-5 p-5">
+
+
+    <!--Section: Content-->
+    <section class="dark-grey-text">
+
+
+      <h2 class="text-center font-weight-bold white-text mb-4 pb-2">Why is it so great?</h2>
+
+      <p class="text-center lead grey-text mx-auto mb-5">Whether you need meal prep for the week, home-cooked meal few times a month, impress your date, or just a fancy dinner night in? We can help you with all of that. We have local aspiring chefs that are willing to come to your home, prepare and cook you a fantastic FRESH meal in your own kitchen! With enough portions* to last few days. And best of all, our Chefs will bring all the ingrediants and spices needed so you don't have to.  You just sit back, relax and have a clean and ready-to-go kitchen. 
+      How great is that?
+      </p>
+
+
+      <div class="row">
+        <div class="col-lg-5 text-center text-lg-left">
+          <img class="img-fluid border" src="images/how2.jpg" alt="Sample image">
+        </div>
+
+
+        <div class="col-lg-7">
+
+          <div class="row mb-3">
+            <div class="col-1">
+              <i class="fa fa-share fa-lg indigo-text"></i>
+            </div>
+
+            <div class="col-xl-10 col-md-11 col-10">
+              <h5 class="font-weight-bold white-text mb-3">Our Monthly Basic Plan
+              <button type="button" class="btn btn-sm btn-success" data-toggle="modal" data-target="#payModal">Get Started ></h5>
+              <p class="grey-text">Our local chef will come to your home once every 2 weeks and cook you the meal of your choice from our menu. The portion can feed upto two people... or two servings.   Eat some now and save some for later. (Additional servings upto 4 can be arranged, please contact us for pricing)</p>
+            </div>
+          </div>
+
+          <div class="row mb-3">
+            <div class="col-1">
+              <i class="fa fa-share fa-lg indigo-text"></i>
+            </div>
+
+            <div class="col-xl-10 col-md-11 col-10">
+              <h5 class="font-weight-bold white-text mb-3">Our most Popular plan
+                <button type="button" class="btn btn-sm btn-success" data-toggle="modal" data-target="#payModal">Get Started ></h5>
+              <p class="grey-text">Perfect for busy professional individuals. A chef will visit your home once a week and prepare you amazing meals from our menu. The portion ranages from 2-3 servings so you can save for later.</p>
+            </div>
+          </div>
+
+          <div class="row">
+            <div class="col-1">
+              <i class="fa fa-share fa-lg indigo-text"></i>
+            </div>
+
+            <div class="col-xl-10 col-md-11 col-10">
+              <h5 class="font-weight-bold white-text mb-3">Date Night special  <button type="button" class="btn btn-sm btn-success" data-toggle="modal" data-target="#payModal">Get Started ></h5>
+              <p class="grey-text mb-0">Do you have a hot date coming up? Want to surprise your loved one with a romantic dinner? Or maybe just pamper yourself to a delicious meal!? This is for you.  This is our on-demand service, select a chef, select date and time, select the meal and that's it!  A chef will come to your home and prep a fancy meal for two. It's that simple!</p>
+            </div>
+          </div>
+
+
+        <div class="row mt-4">
+          <div class="col-1">
+            <i class="fa fa-share fa-lg indigo-text"></i>
+          </div>
+
+          <div class="col-xl-10 col-md-11 col-10">
+            <h5 class="font-weight-bold white-text mb-3">Custom Service is also available. </h5>
+            <p class="grey-text mb-0">Please contact us for pricing</p>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+  <hr class="white"
+  >
+
+  <!-- Card -->
+
+
+  <div class="row mx-auto text-center fadeIn">
+    <div class="col-md-6 col-lg-4 mt-4">
+      <div class="card">
+        <div class="card-header">
+          <h4>
+            <i class="fa fa-heart fa-lg mr-2" style="color:red"></i>
+            <strong>Date Night</strong>
+          </h4>
+        </div>
+
+        <!--Card content-->
+        <div class="card-body">
+          <h2 class="card-title pricing-card-title mb-4">$99
+            <small class="text-muted">/ per visit</small>
+          </h2>
+
+          <ol class="list-unstyled m-4">
+            <li>On-Demand Service
+              <i class="fa fa-check green-text ml-1"></i>
+            </li>
+            <hr>
+            <li>Perfect for a date night
+              <i class="fa fa-check green-text ml-1"></i>
+            </li>
+            <hr>
+            <li>Makes a perfect gift
+              <i class="fa fa-check green-text ml-1"></i>
+            </li>
+            <hr>
+            <li>two entre, two side dish
+              <i class="fa fa-check green-text ml-1"></i>
+            </li>
+          </ol>
+
+          <button type="button" class="btn btn-lg btn-block btn-success" data-toggle="modal" data-target="#payModal">Get
+            Started</button>
+        </div>
+      </div>
+    </div>
+
+    <div class="col-md-6 col-lg-4 mt-4">
+      <div class="card">
+        <div class="card-header">
+          <h4 class="text-lg-center">
+            <i class="fa fa-star fa-lg mr-2" style="color:gold"></i>
+            <strong>Most Popular</strong>
+          </h4>
+        </div>
+
+        <div class="card-body">
+          <h2 class="card-title pricing-card-title mb-4">$249
+            <small class="text-muted">/ mo</small>
+          </h2>
+          <ol class="list-unstyled mb-4">
+            <li>Three visits per month
+              <i class="fa fa-check green-text ml-1"></i>
+            </li>
+            <hr>
+            <li>One delicious entre, two sides
+              <i class="fa fa-check green-text ml-1"></i>
+            </li>
+            <hr>
+            <li>Enough portion for second meal
+              <i class="fa fa-check green-text ml-1"></i>
+            </li>
+            <hr>
+            <li>Choices of various cuisine
+              <i class="fa fa-check green-text ml-1"></i>
+            </li>
+          </ol>
+          <button type="button" class="btn btn-lg btn-block btn-primary">Get started</button>
+        </div>
+      </div>
+    </div>
+
+    <div class="col-md-12 col-lg-4 mt-4">
+      <div class="card">
+        <div class="card-header">
+          <h4>
+            <i class="fa fa-fire fa-lg mr-2" style="color:rgba(255, 115, 0, 0.822)"></i>
+            <strong>Premium</strong>
+          </h4>
+        </div>
+        <div class="card-body">
+          <h2 class="card-title pricing-card-title mb-4">$349
+            <small class="text-muted">/ mo</small>
+          </h2>
+
+          <ol class="list-unstyled mb-4">
+            <li>Upto 4 visits per month
+              <i class="fa fa-check green-text ml-1"></i>
+            </li>
+            <hr>
+            <li>One delicious entre
+              <i class="fa fa-check green-text ml-1"></i>
+            </li>
+            <hr>
+            <li>Two sides
+              <i class="fa fa-check green-text ml-1"></i>
+            </li>
+            <hr>
+            <li>Upto four servings
+              <i class="fa fa-check green-text ml-1"></i>
+            </li>
+          </ol>
+          <button type="button" class="btn btn-lg btn-block btn-orange">Get started</button>
+        </div>
+      </div>
+    </div>
+  </div>
+  </div>
+  </div>
+  </main>
+
+  <!-- Payment Modal -->
+  <div class="modal fade bd-example-modal-lg rounded" id="payModal" role="dialog">
+    <div class="modal-dialog modal-lg">
+      <div class="modal-content">
+        <div class="modal-header bg-info text-white">
+          <h3 class="modal-title">Reserve a Date Night Chef</h3>
+          <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+            <span aria-hidden="true">x</span>
+          </button>
+        </div>
+        <div class="modal-body">
+          <form class="Needsverification" id="reserveForm" action="">
+            <div class="row form-group">
+              <label for="numChef" class="col-sm-6 col-form-label">Select your Chef</label>
+              <div class="col">
+                <select class="form-control" name="numOfChef" id="numChef">
+                  <option value selected hidden>Select...</option>
+                  <option value="1">Chef #1</option>
+                  <option value="2">Chef #2</option>
+                  <option value="3">Chef #3</option>
+                </select>
+              </div>
+            </div>
+
+            <div class="row form-group">
+              <form class="needs-validation">
+                <label for="date" class="col-md-3 col-form-label" name="date">Reservation Date</label>
+                <div class="col-6 col-md-3">
+                  <input type="date" id="date" class="form-control" placeholder="Date">
+                </div>
+                <label for="time" class="col col-form-label" name="date">Time</label>
+
+                <div class="col-4 col-md-4">
+                  <input type="time" id="time" class="form-control" placeholder="Time">
+                </div>
+            </div>
+            <div class="form-group row">
+              <label for="areaCode" class="col-md-2 col-form-label">Contact Tel.</label>
+              <div class="col-5 col-md-3">
+                <input type="tel" class="form-control" id="areaCode" name="areaCode" placeholder="Area code" />
+              </div>
+              <div class="col-7">
+                <input type="tel" class="form-control" name="telNum" placeholder="Tel. number" />
+              </div>
+            </div>
+            <div class="form-group row">
+              <label for="email" class="col-md-2 col-form-label">Email</label>
+              <div class="col-md-10">
+                <input type="email" class="form-control" id="email" name="email" placeholder="Email" required />
+              </div>
+            </div>
+
+            <!-- credit card payment form -->
+            <div class="card border">
+              <div class="card-header">
+                <div class="row">
+                  <div class="col-md-6"> <span>CREDIT/DEBIT CARD PAYMENT</span> </div>
+                  <div class="col-md-6 text-right" style="margin-top: -5px;"> <img
+                      src="https://img.icons8.com/color/36/000000/visa.png"> <img
+                      src="https://img.icons8.com/color/36/000000/mastercard.png"> <img
+                      src="https://img.icons8.com/color/36/000000/amex.png"> </div>
+                </div>
+              </div>
+              <div class="card-body" style="height: 350px">
+                <div class="form-group"> <label for="cc-number" class="control-label">CARD NUMBER</label> <input
+                    id="cc-number" type="tel" class="input-lg form-control cc-number" autocomplete="cc-number"
+                    placeholder="•••• •••• •••• ••••" required> </div>
+                <div class="row">
+                  <div class="col-md-6">
+                    <div class="form-group"> <label for="cc-exp" class="control-label">EXPIRATION</label> <input
+                        id="cc-exp" type="tel" class="input-lg form-control cc-exp" autocomplete="cc-exp"
+                        placeholder="•• / ••" required> </div>
+                  </div>
+                  <div class="col-md-6">
+                    <div class="form-group"> <label for="cc-cvc" class="control-label">CARD CVC</label> <input
+                        id="cc-cvc" type="tel" class="input-lg form-control cc-cvc" autocomplete="off"
+                        placeholder="••••" required> </div>
+                  </div>
+                </div>
+                <div class="form-group"> <label for="numeric" class="control-label">CARD HOLDER NAME</label> <input
+                    type="text" class="input form-control"> </div>
+                <div class="form-group"> <button type="button" class="btn btn-light" id="cancelbtn"
+                    data-dismiss="modal">Cancel</button>
+                  <button text="Submit" type="submit" class="btn btn-primary" id="payBtn">Submit</button></div>
+              </div>
+            </div>
+          </form>
+        </div>
+      </div>
+    </div>
+  </div>
+  <!--Main layout-->
+
+
+
+  <!-- Footer -->
+  <footer class="page-footer special-color-dark text-center pt-4 mt-5">
+    <div class="col">
+      <a class="btn  btn-grey" href="#" target="_blank" role="button">Join our team
+        <i class="fa fa-check-circle fa-lg ml-2"></i>
+      </a>
+      <a class="btn btn-grey" href="ContactUs.html" target="_blank" role="button">contact us
+        <i class="fa fa-envelope fa-lg ml-2"></i>
+      </a>
+    </div>
+
+
+    <!-- Social buttons -->
+    <div class="container">
+      <ul class="list-unstyled list-inline text-center">
+        <li class="list-inline-item">
+          <a class="btn-floating btn-fb mx-1">
+            <i class="fa fa-facebook-f fa-lg"> </i>
+          </a>
+        </li>
+        <li class="list-inline-item">
+          <a class="btn-floating">
+            <i class="fa fa-twitter fa-lg "> </i>
+          </a>
+        </li>
+        <li class="list-inline-item">
+          <a class="btn-floating btn-gplus mx-1">
+            <i class="fa fa-google-plus fa-lg"> </i>
+          </a>
+        </li>
+        <li class="list-inline-item">
+          <a class="btn-floating btn-li mx-1">
+            <i class="fa fa-instagram fa-lg"> </i>
+          </a>
+        </li>
+        <li class="list-inline-item">
+          <a class="btn-floating btn-dribbble mx-1">
+            <i class="fa fa-whatsapp fa-lg"> </i>
+          </a>
+        </li>
+      </ul>
+    </div>
+
+    <!-- Copyright -->
+    <div class="footer-copyright text-center py-3">© 2020 Copyright:
+      <a href="#"> Ashraf Madina</a>
+    </div>
+
+  </footer>
+
+  <!-- jQuery must come first, then Popper.js, then the Bootstrap JavaScript plugins.-->
+  <script src="node_modules/jquery/dist/jquery.slim.min.js"></script>
+  <script src="node_modules/popper.js/dist/umd/popper.min.js"></script>
+  <script src="node_modules/bootstrap/dist/js/bootstrap.min.js"></script>
+  <script type="text/javascript" src="js/jquery-3.4.1.min.js"></script>
+
+
+  </script>
+
+</body>
+
+</html>

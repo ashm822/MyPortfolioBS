@@ -1,0 +1,259 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <!-- Required meta tags always come first -->
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+
+  <!-- Bootstrap CSS -->
+  <link rel="stylesheet" href="node_modules/bootstrap/dist/css/bootstrap.min.css" />
+
+
+  <!-- Additional CSS must be placed after Bootstrap CSS -->
+  <link rel="stylesheet" href="node_modules/font-awesome/css/font-awesome.min.css" />
+  <link rel="stylesheet" href="node_modules/bootstrap-social/bootstrap-social.css" />
+  <link rel="stylesheet" href="styles.css">
+  <link rel="stylesheet" href="effects/mdb.min.css">
+
+
+  <title>HomeCare: Dashboard</title>
+</head>
+
+<!------------ NAVBAR ------------>
+<nav class="navbar navbar-light bg-light">
+  <!-- Hamburgericon to open sidenav -->
+  <button class="navbar-toggler" id="NavHamburger" data-activates="slide-out" type="button" data-toggle="collapse" data-target="#sideNav"
+  aria-orientation="vertical" aria-expanded="false" aria-label="Toggle navigation"><span class="dark-gray-text"><i
+      class="fa fa-bars"></i></span></button>
+  <a class="navbar-brand" href="index.html"><img src="img/brand.png" width="300"></a>
+    <form class="form-inline">
+
+      <!--- Login ICON -------->
+      <ul class="nav navbar-right">
+        <li><a href="#" id="loginBtn"><span class="fa fa-user"></span> Login</a></li>
+      </ul>
+        
+    </form>          
+</nav>
+
+<!---  SideNav ----->
+<div class="sideNav collapse" id="sideNav" data-toggle="slide-out">  
+  <div class="nav bg-light p-2">
+    <ul class="nav-item list-unstyled">
+        <li class="nav-item"><a href="#">About</a></li>
+        <li><a href="#">Register</a></li>
+        <li><a href="#">Testinomials</a></li>
+        <li><a href="#">Contact Us</a></li><hr>
+        <li><a href="#">Sign out</a></li>
+    </ul>
+  </div>
+</div>
+
+
+<body>
+  <!-----------  Login modal --------->
+
+  <div class="modal fade" id="loginModal" tabindex="-1" role="dialog" aria-labelledby="loginModal" aria-hidden="true">
+    <div class="modal-dialog cascading-modal modal-avatar modal-sm" role="document">
+      <!--Content-->
+      <div class="modal-content">
+        <!--Header-->
+        <div class="modal-header mx-auto">
+          <img src="img/logo3.png" alt="avatar" class="rounded-circle img-responsive">
+        </div>
+        <!--Body-->
+        <div class="modal-body text-center mb-1">
+
+          <input type="username" type="text" id="userName" class="form-control form-control-sm validate ml-0"
+            placeholder="Username" required>
+          <label data-error="wrong" data-success="right" for="userName" class="ml-0"></label>
+
+          <input type="password" type="text" id="password" class="form-control form-control-sm validate ml-0"
+            placeholder="Password" required>
+          <label data-error="wrong" data-success="right" for="password" class="ml-0"></label>
+
+          <hr>
+          <div class="text-center mt-4">
+            <button class="btn btn-primary mt-1">Login <i class="fa fa-sign-in ml-1"></i></button>
+            <button type="button" class="btn btn-grey waves-effect ml-auto" data-dismiss="modal">Close</button>
+          </div>
+        </div>
+
+      </div>
+    </div>
+  </div>
+  <!--- Modal Login end --------->
+
+  
+  <div class="container my-5"> 
+
+   <!----------------------Section: header contents ----------------->
+
+    <section class="dark-grey-text">
+      <h3 class="text-center font-weight-bold mb-5">Lists of service professionals</h3>
+      <hr>
+      <p class="lead text-muted text-center mt-0 pt-2 mb-3">Browse thru our lists and get started by clicking on the reserve button.</p>
+
+      <!-----   Search bar  ----------->
+      <div class="container w-50">
+        <div class="col">
+        <div class="input-group pl-0">
+          <div class="input-group-prepend">
+            <span class="input-group-text blue lighten-2" id="searchIcon"><i class="fa fa-search text-white"
+                aria-hidden="true"></i></span>
+          </div>
+          <input class="form-control my-0 py-1" type="text" placeholder="Search" aria-label="Search">
+        </div>
+      </div>
+      </div>
+
+      <!---- -- Body contents -------->
+      <div class="row">
+        
+        <div class="col-12 mt-5">
+          <div class="card z-depth-0 border-light">
+            <div class="card-body p-0">
+              <div class="row mx-0">
+                <div class="col-md-2 grey lighten-4 rounded-left">
+                  <img src="img/cook1.jpg" width="150" class="d-md-block d-none p-0 ">
+                </div>
+                <div class="col-7 grey lighten-4 rounded-left">
+            
+                  <h5 class="font-weight-bold">Jade Doe<i class="fa fa-cutlery orange-text ml-2"></i></h5>
+                  <p class="font-weight-light text-muted mb-4">Lorem ipsum dolor sit amet consectetur adipisicing elit. Quibusdam vitae, fuga similique quos aperiam tenetur quo ut rerum debitis.</p>
+                </div>
+                <div class="col-md-3 text-center pt-4">
+                  <p class="h4 font-weight-normal">$35<span class="font-small grey-text"> / hr</span></p>
+                  <span class="nav justify-content-center pills-rounded">                  
+                    <a class="nav-link" id="item-mail" href="mailto:" ><i class="fa fa-envelope fa-lg"></i></a>                                                           
+                    <a class="nav-link" id="item-phone" href="tel:+2155551234" ><i class="fa fa-phone fa-lg"></i></a>                  
+                    <a class="nav-link" id="item-wa"  href="#" ><i class="fa fa-comments fa-lg"></i></a>                     
+                  </span>               
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+        
+        <div class="col-12">
+          <div class="card z-depth-0 border-light">
+            <div class="card-body p-0">
+              <div class="row mx-0">
+                <div class="col-md-2 grey lighten-4 rounded-left">
+                  <img src="img/cook2.jpg" width="150" height="130" class="d-md-block d-none p-0 ">
+                </div>
+                <div class="col-md-7 grey lighten-4 rounded-left pt-4">
+                  <h5 class="font-weight-bold">Bruce Wayne<i class="fa fa-cutlery orange-text ml-2"></i> <i class="fa fa-home fa-lg purple-text"></i></h5>
+                  <p class="font-weight-light text-muted mb-4">Lorem ipsum dolor sit amet consectetur adipisicing elit. Quibusdam vitae, fuga similique quos aperiam tenetur quo ut rerum debitis.</p>
+                </div>
+                <div class="col-md-3 text-center pt-4">
+                  <p class="h4 font-weight-normal">$99<span class="font-small grey-text"> / visit</span></p>
+                  <span class="nav justify-content-center pills-rounded">                  
+                    <a class="nav-link" id="item-mail" href="#" ><i class="fa fa-envelope fa-lg"></i></a>                                                           
+                    <a class="nav-link" id="item-phone" href="#" ><i class="fa fa-phone fa-lg"></i></a>                  
+                    <a class="nav-link" id="item-wa"  href="#" ><i class="fa fa-comments fa-lg"></i></a>                     
+                  </span>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+        
+        <div class="col-12">
+          <div class="card z-depth-0 border-light">
+            <div class="card-body p-0">
+              <div class="row mx-0">
+                <div class="col-md-2 grey lighten-4 rounded-left">
+                  <img src="img/cook1.jpg" width="150" class="d-md-block d-none p-0 ">
+                </div>
+                <div class="col-md-7 grey lighten-4 rounded-left pt-4">
+                  <h5 class="font-weight-bold">Jane Doe<i class="fa fa-cutlery orange-text ml-2"></i></h5>
+                  <p class="font-weight-light text-muted mb-4">Lorem ipsum dolor sit amet consectetur adipisicing elit. Quibusdam vitae, fuga similique quos aperiam tenetur quo ut rerum debitis.</p>
+                </div>
+                <div class="col-md-3 text-center pt-4">
+                  <p class="h4 font-weight-normal">$37<span class="font-small grey-text"> / hr</span></p>
+                  <span class="nav justify-content-center pills-rounded">                  
+                    <a class="nav-link" id="item-mail" href="#" ><i class="fa fa-envelope fa-lg"></i></a>                                                           
+                    <a class="nav-link" id="item-phone" href="#" ><i class="fa fa-phone fa-lg"></i></a>                  
+                    <a class="nav-link" id="item-wa"  href="#" ><i class="fa fa-comments fa-lg"></i></a>                     
+                  </span>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+        
+        <div class="col-12">
+          <div class="card z-depth-0 border-light">
+            <div class="card-body p-0">
+              <div class="row mx-0">
+                <div class="col-md-2 grey lighten-4 rounded-left">
+                  <img src="img/cook2.jpg" width="150" height="130" class="d-md-block d-none p-0 ">
+                </div>
+                <div class="col-md-7 grey lighten-4 rounded-left pt-4">
+                  <h5 class="font-weight-bold">Peter Parker<i class="fa fa-cutlery orange-text ml-2"></i></h5>
+                  <p class="font-weight-light text-muted mb-4">Lorem ipsum dolor sit amet consectetur adipisicing elit. Quibusdam vitae, fuga similique quos aperiam tenetur quo ut rerum debitis.</p>
+                </div>
+                <div class="col-md-3 text-center pt-4">
+                  <p class="h4 font-weight-normal">$25<span class="font-small grey-text"> / hr</span></p>
+                  <span class="nav justify-content-center pills-rounded">                  
+                    <a class="nav-link" id="item-mail" href="#" ><i class="fa fa-envelope fa-lg"></i></a>                                                           
+                    <a class="nav-link" id="item-phone" href="#" ><i class="fa fa-phone fa-lg"></i></a>                  
+                    <a class="nav-link" id="item-wa"  href="#" ><i class="fa fa-comments fa-lg"></i></a>                     
+                  </span>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>       
+      </div> 
+    </section>
+    <!--Section: Content--> 
+  
+  </div>
+   
+
+
+
+
+
+
+
+
+
+
+  <!------------- Footer ---------------->
+  <footer class="fixed-bottom bg-light">
+    <div class="footer-copyright text-center text-black-50 py-3">
+      <a class="fb-ic">
+        <i class="fa fa-facebook-f fa-lg blue-text mr-4"> </i>
+      </a>
+      <a class="tw-ic">
+        <i class="fa fa-twitter fa-lg mr-4"> </i>
+      </a>
+      <a class="yt-ic">
+        <i class="fa fa-youtube red-text fa-lg mr-4"> </i>
+      </a>
+      <a class="ins-ic">
+        <i class="fa fa-instagram fa-lg purple-text"> </i>
+      </a>
+
+      <!-- Copyright -->
+      <a class="footer-copyright ml-5 py-3">v1.1 |  ©2020 copyright ashraf madina</a>
+    </div>
+
+  </footer>
+
+
+
+  <!-- jQuery must come first, then Popper.js, then the Bootstrap JavaScript plugins.-->
+  <script src="node_modules/jquery/dist/jquery.slim.min.js"></script>
+  <script src="node_modules/popper.js/dist/umd/popper.min.js"></script>
+  <script src="node_modules/bootstrap/dist/js/bootstrap.min.js"></script>
+  <script type="text/javascript" src="js/jquery-3.4.1.min.js"></script>
+  <script src="JS/scripts.js"></script>
+
+</body>
+
+</html>

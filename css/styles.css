@@ -1,0 +1,44 @@
+
+body {
+  font-family: "roboto", sans-serif;
+}
+
+h3 {
+  font-family:"roboto" , Verdana, Geneva, Tahoma, sans-serif
+}
+
+.card {
+  box-shadow: 10px 10px 5px grey, !important;
+  z-index: 2;
+}
+
+  .card :hover {
+    background-color: orangered !important;
+  }
+
+.navbar {
+  opacity: .5 !important;
+  background-color: darkcyan, !important;
+  z-index: 2;
+}
+  
+.sidenav a:hover {
+  color: orangered;
+}
+
+.sidenav {
+  height: 100% !important;
+  width: 0 !important; 
+  position: fixed;
+  z-index: 1; /* Stay on top */
+  top: 0; 
+  left: 0;
+  background-color: #111; /* Black*/
+  overflow-x: hidden; /* Disable horizontal scroll */
+  padding-top: 60px; 
+  transition: 0.5s; 
+}
+
+
+
+
