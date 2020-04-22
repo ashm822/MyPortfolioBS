@@ -1,7 +1,4 @@
 
-body {
-  font-family: "roboto", sans-serif;
-}
 
 h3 {
   font-family:"roboto" , Verdana, Geneva, Tahoma, sans-serif
@@ -21,24 +18,10 @@ h3 {
   background-color: darkcyan, !important;
   z-index: 2;
 }
-  
-.sidenav a:hover {
-  color: orangered;
+
+.navbar-brand {
+  position: absolute !important;
+  left: 50% !important;
+  margin-left: -50px !important;  
+  display: block;
 }
-
-.sidenav {
-  height: 100% !important;
-  width: 0 !important; 
-  position: fixed;
-  z-index: 1; /* Stay on top */
-  top: 0; 
-  left: 0;
-  background-color: #111; /* Black*/
-  overflow-x: hidden; /* Disable horizontal scroll */
-  padding-top: 60px; 
-  transition: 0.5s; 
-}
-
-
-
-

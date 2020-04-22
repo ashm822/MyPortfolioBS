@@ -22,38 +22,29 @@
 </head>
 
 <!------------ NAVBAR ------------>
-<nav class="navbar navbar-light bg-light">
 
-  <!-- Hamburgericon to open sidenav --> 
-  <button class="navbar-toggler" id="navHamburger" data-activates="slide-out" type="button" data-target="#sideNav" data-toggle="slide-out"
-      aria-controls="sideNav" aria-orientation="vertical" aria-expanded="false" aria-label="Toggle navigation" onclick="openNav()"><i class="fa fa-bars"></i>
-  </button>
-    <a class="navbar-brand" href="#"><img src="img/brand.png" width="300"></a>
-      <form class="form-inline">
-
-      <!--- Login ICON -------->
-      <ul class="nav navbar-right">
-        <li><a href="#" id="loginBtn"><span class="fa fa-user"></span> Login</a></li>
-      </ul>
-        
-    </form>          
+<nav class="navbar navbar-light bg-light nav-fill">
+  <div class="navbar-brand mr-5">
+    <a href="#"><img src="img/brand.png" width="300"></a>
+  </div> 
+  <ul class="nav nav-pills nav-fill">
+    <li class="nav-item">
+      <a class="nav-link active" href="#">Home</a>
+    </li>
+    <li class="nav-item">
+      <a class="nav-link" href="#">About Our Services</a>
+    </li>
+    <li class="nav-item">
+      <a class="nav-link" href="#">Testinomials</a>
+    </li>
+    <li class="nav-item">
+      <a class="nav-link" href="#">Contact us</a>
+    </li>       
+      </ul>            
 </nav>
 
-<!---  SideNav ----->
-<div class="sideNav collapse navbar-collapse" id="sideNav" data-toggle="slide-out">  
-  <div class="nav bg-light p-2">
-    <ul class="nav-item list-unstyled">
-        <li class="nav-item"><a href="#">About</a></li>
-        <li><a href="#">Register</a></li>
-        <li><a href="#">Testinomials</a></li>
-        <li><a href="#">Contact Us</a></li><hr>
-        <li><a href="#">Sign out</a></li>
-    </ul>
-  </div>
-</div>
-
-
 <body>
+
   <!-----------  Login modal --------->
 
   <div class="modal fade" id="loginModal" tabindex="-1" role="dialog" aria-labelledby="myLoginModal" aria-hidden="true">
