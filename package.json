@@ -22,7 +22,7 @@
     "lite-server": "^2.3.0"
   },
   "dependencies": {
-    "bootstrap": "^4.4.1",
+    "bootstrap": "^4.5.0",
     "bootstrap-social": "^5.1.1",
     "bulma": "^0.8.1",
     "font-awesome": "^4.7.0",

@@ -2,240 +2,647 @@
 <html lang="en">
 
 <head>
-  <!-- Required meta tags always come first -->
-  <meta charset="utf-8" />
-  <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <!-- Required meta tags always come first -->
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
 
-  <!-- Bootstrap CSS -->
-  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css" integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous">
-  <link rel="stylesheet" href="effects/mdb.min.css"> 
+    <title>Me: Ashraf Madina</title>
 
+    <!-- build:css css/main.css -->
+    <link rel="stylesheet" href="css/bootstrap.min.css" type="text/css">
+    <link rel="stylesheet" href="css/animate.css" type="text/css">
+    <link rel="stylesheet" href="css/transition-animations.css" type="text/css">
+    <link rel="stylesheet" href="css/owl.carousel.css" type="text/css">
+    <link rel="stylesheet" href="css/magnific-popup.css" type="text/css">
+    <link rel="stylesheet" href="css/main.css" type="text/css">
 
-  <!-- Additional CSS must be placed after Bootstrap CSS -->
-  <link href="https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css" rel="stylesheet" integrity="sha384-wvfXpqpZZVQGK6TAh5PVlGOfQNHSoD2xbE+QkPxCAFlNEevoEH3Sl0sibVcOQVnN" crossorigin="anonymous">
-  <link rel="stylesheet" href="node_modules/bootstrap-social/bootstrap-social.css" />
-  <link rel="stylesheet" href="styles.css">
-  
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.0.12/css/all.css">
+    <link rel="stylesheet" href="ripple.min.css">
 
+    <script src="js/jquery-2.1.3.min.js"></script>
+    <script src="js/modernizr.custom.js"></script>
 
-  <title>HomeCare: Dashboard</title>
-</head>
+    
 
-<!------------ NAVBAR ------------>
+  </head>
 
-<nav class="navbar navbar-light bg-light nav-fill">
-  <div class="navbar-brand mr-5">
-    <a href="#"><img src="img/brand.png" width="300"></a>
-  </div> 
-  <ul class="nav nav-pills nav-fill">
-    <li class="nav-item">
-      <a class="nav-link active" href="#">Home</a>
-    </li>
-    <li class="nav-item">
-      <a class="nav-link" href="#">About Our Services</a>
-    </li>
-    <li class="nav-item">
-      <a class="nav-link" href="#">Testinomials</a>
-    </li>
-    <li class="nav-item">
-      <a class="nav-link" href="#">Contact us</a>
-    </li>       
-      </ul>            
-</nav>
-
-<body>
-
-  <!-----------  Login modal --------->
-
-  <div class="modal fade" id="loginModal" tabindex="-1" role="dialog" aria-labelledby="myLoginModal" aria-hidden="true">
-    <div class="modal-dialog cascading-modal modal-avatar modal-md" role="document">
-      <!--Content-->
-      <div class="modal-content">
-        <!--Header-->
-        <div class="modal-header mx-auto">
-          <img src="img/logo3.png" alt="avatar" class="rounded-circle img-responsive">
-        </div>
-        <!--Body-->
-        <div class="modal-body text-center mb-1">
-
-          <input type="username" type="text" id="userName" class="form-control form-control-sm validate ml-0"
-            placeholder="Username" required>
-          <label data-error="wrong" data-success="right" for="userName" class="ml-0"></label>
-
-          <input type="password" type="text" id="password" class="form-control form-control-sm validate ml-0"
-            placeholder="Password" required>
-          <label data-error="wrong" data-success="right" for="password" class="ml-0"></label>
-
-          <hr>
-          <div class="text-center mt-4">
-            <button class="btn btn-primary mt-1">Login <i class="fa fa-sign-in"></i></button>
-            <button type="button" class="btn btn-grey lighten-5" data-dismiss="modal">Close</button>
-          </div>
+  <body>
+    <!-- Loading animation -->
+    <div class="preloader">
+      <div class="preloader-animation">
+        <div class="preloader-spinner">
         </div>
       </div>
     </div>
-  </div>
-  <!--- Modal Login end --------->
+    <!-- /Loading animation -->
 
 
-  <div class="container my-5">
+    <!---  Floating Nav ------>
+ 
+  <nav class="floating-menu">
+    <ul class="main-menu">
+        <li>
+            <a href="#" class="ripple">
+                <i class="fas fa-home fa-lg"></i>
+            </a>
+        </li>
+        <li>
+            <a href="#" class="ripple">
+                <i class="far fa-user fa-lg"></i>
+            </a>
+        </li>
+        <li>
+            <a href="#" class="ripple">
+                <i class="far fa-address-card fa-lg"></i>
+            </a>
+        </li>
+        <li>
+            <a href="#" class="ripple">
+                <i class="fas fa-cogs fa-lg"></i>
+            </a>
+        </li>
+        <li>
+            <a href="#" class="ripple">
+                <i class="fas fa-envelope fa-lg"></i>
+            </a>
+        </li>
+    </ul>
+    <div class="menu-bg"></div>
+</nav>
 
-    <!--Section: Content-->
-    <section class="dark-grey-text text-center">
-      <!-- Section heading -->
-      <h3 class="font-weight-bold black-text mb-4 pb-2">Our Services</h3>
-      <hr class="w-header">
-      <!-- Section description -->
-      <p class="lead text-muted mx-auto mt-4 pt-2 mb-5">It's easy to find the right professional for your home needs.
-        Just click on the tile to view lists of our local service men and women who has years of experence is waiting to give you the best service possible.</p>
+    <div id="page" class="page">
+      <!-- Header -->
+      <header id="site_header" class="header mobile-menu-hide">
+        <div class="header-content">
+          <div class="site-title-block mobile-hidden">
+            <div class="site-title">Ashraf <span>Madina</span></div>
+          </div>
 
-      <!--First row-->
-      <div class="row">
-        <div class="col-md-3 mb-4">
-          <!-- Card -->
-          <a href="service.html" class="card hoverable">
-            <!-- Card content -->
-            <div class="card-body my-4">
-              <p><i class="fa fa-cutlery orange-text fa-2x text-muted"></i></p>
-              <h5 class="black-text mb-0">Personal Cook</h5>
-            </div>
-          </a>
+          <!-- Navigation -->
+          <div class="site-nav">
+            <ul id="nav" class="site-main-menu">
+              <li>
+                <a class="pt-trigger" href="#home" >Home</a>
+              </li>
+              <li>
+                <a class="pt-trigger" href="#resume" >Resume</a>
+              </li>
+              <li>
+                <a class="pt-trigger" href="#services" >Hobbies</a>
+              </li>
+              <li>
+                <a class="pt-trigger" href="#portfolio" >Portfolio</a>
+              </li>
+              <li>
+                <a class="pt-trigger" href="#contact" >Contact</a>
+              </li>
+              <li>
+                <a href="cv.html">.</a>
+              </li>
+            </ul>
+          </div>
+          <!-- Navigation -->
+        </div>
+      </header>
+      <!-- /Header -->
+
+      <!-- Mobile Header -->
+      <div class="mobile-header mobile-visible">
+        <div class="mobile-logo-container">
+          <div class="mobile-site-title">Ashraf Madina</div>
         </div>
 
-
-        <!-- Card -->
-        
-        <div class="col-md-3 mb-4">
-          <a href="#!" class="card hoverable">
-            <!-- Card content -->
-            <div class="card-body my-4">
-              <p><i class="fa fa-female pink-text fa-2x text-muted"></i></p>
-              <h5 class="black-text mb-0">Maid Service</h5>
-            </div>
-          </a>
-        </div>
-
-         <!-- Card -->
-        <div class="col-md-3 mb-4">
-         
-          <a href="#!" class="card hoverable">
-          <!-- Card content -->
-            <div class="card-body my-4">
-              <p><i class="fa fa-home purple-text fa-2x text-muted"></i></p>
-              <h5 class="black-text mb-0">Cleaning</h5>
-            </div>
-          </a>
-        </div>
-
-
-        <!-- Card -->
-        <div class="col-md-3 mb-4">  
-
-          <a href="#!" class="card hoverable">
-           <!-- Card content -->
-            <div class="card-body my-4">
-              <p><i class="fa fa-child blue-text fa-2x text-muted"></i></p>
-              <h5 class="black-text mb-0">Babysitter</h5>
-            </div>
-          </a>
-        </div>
+        <a class="menu-toggle mobile-visible">
+          <i class="fa fa-bars"></i>
+        </a>
       </div>
-    
-      <!---------------Next CARD Row ------------------------>
-      <div class="row">
-        <div class="col-md-3 mb-4">
-          <!-- Card -->
-          <a href="#!" class="card hoverable">
-            <!-- Card content -->
-            <div class="card-body my-4">
-              <p><i class="fa fa-wheelchair-alt indigo-text fa-2x red-text text-muted"></i></p>
-              <h5 class="black-text mb-0">Caretaker</h5>
-            </div>
-          </a>
-        </div>
+      <!-- /Mobile Header -->
 
-        <div class="col-md-3 mb-4">
-         <!-- Card -->
-          <a href="#!" class="card hoverable">
-            <!-- Card content -->
-            <div class="card-body my-4">
-              <p><i class="fa fa-paw fa-2x text-muted"></i></p>
-              <h5 class="black-text mb-0">Dogsitter</h5>
-            </div>
-          </a>
-        </div>
-      
-        <div class="col-md-3 mb-4">
-          <!-- Card -->
-          <a href="#!" class="card hoverable">
-            <!-- Card content -->
-            <div class="card-body my-4">
-              <p><i class="fa fa-building brown-text fa-2x text-muted"></i></p>
-              <h5 class="black-text mb-0">Plumber</h5>
-            </div>
-          </a>
-        </div>
+      <!-- Main Content -->
+      <div id="main" class="site-main">
+        <!-- Page changer wrapper -->
+        <div class="pt-wrapper">
+          <!-- Subpages -->
+          <div class="subpages">
 
-        <div class="col-md-3 mb-4">
-          <!-- Card -->
-          <a href="#!" class="card hoverable">
-            <!-- Card content -->
-            <div class="card-body my-4">
-              <p><i class="fa fa-wrench green-text fa-2x text-muted"></i></p>
-              <h5 class="black-text mb-0">Handyman</h5>
+            <!-- Home Subpage -->
+            <section class="pt-page" data-id="home">
+              <div class="section-inner start-page-content">
+                <div class="page-header">
+                  <div class="row">
+                    <div class="col-sm-4 col-md-4 col-lg-4">
+                      <div class="photo">
+                        <img src="images/me3.png" alt="">
+                      </div>
+                    </div>
+
+                    <div class="col-sm-8 col-md-8 col-lg-8">
+                      <div class="title-block">
+                        <h1>Ashraf Madina</h1>
+                        <div class="owl-carousel text-rotation">                                    
+                          <div class="item">
+                            <div class="sp-subtitle">QA Engineer</div>
+                          </div>
+                          <div class="item">
+                            <div class="sp-subtitle">Front-end developer</div>
+                          </div>
+                        </div>
+                      </div>
+
+                      <div class="social-links">
+                        <a href="#"><i class="fab fa-linkedin"></i></a>
+                        <a href="#"><i class="fab fa-git"></i></a>
+                        <a href="#"><i class="fab fa-instagram"></i></a>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+
+                <div class="page-content">
+                  <div class="row">
+
+                    <div class="col-sm-6 col-md-6 col-lg-6 wow fadeInLeft animated" data-wow-delay="0.3s" 
+                    style="visibility: visible; animation-name: fadeInLeft; animation-delay: 0.3s;">
+                      <div class="about-me">
+                        <div class="block-title">
+                          <h3>About <span>Me</span></h3>
+                        </div>
+                        <p>Hello! I’m Ashraf Madina. I'm a Sr. QA Engineer. I automate manual tests into automated scripts. I recently completed Bootstrap courses and pursuing full-stack developer certification.</p>
+                      </div>
+                      <div class="download-resume">
+                        <a href="pdf\certification1.pdf" download="Madina " class="btn btn-primary" >Download Resume</a>
+                      </div>
+                    </div>
+
+                    <div class="col-sm-6 col-md-6 col-lg-6">
+                      <ul class="info-list">
+                        
+                        <li><span class="title">Residence</span><span class="value">Philadelphia, USA</span></li>
+                        <li><span class="title">E-mail</span><span class="value">ash822m@gmail.com</a></span></li>
+                        <li><span class="title">Phone</span><span class="value">(718) 501-9252</a></span></li>
+                        <li><span class="title">Freelance</span><span class="value available">Available</span></li>
+                        <li><span class="title">Employer</span><span class="value">Asset-Map, LLC</span></li>
+                        <li>
+                      </ul>
+                    </div>
+
+                  </div>
+                </div>
+              </div>
+            </section>
+            <!-- End of Home Subpage -->
+
+            <!-- Resume Subpage -->
+     <section class="pt-page" data-id="resume">
+      <div class="section-inner custom-page-content">
+        <div class="page-header color-1">
+          <h2>Resume</h2>
+        </div>
+        <div class="page-content">
+
+          <div class="row">
+            <div class="col-sm-6 col-md-6 col-lg-6">
+              <div class="block">
+                <div class="block-title">
+                  <h3>Education</h3>
+                </div>
+
+                <div class="timeline">
+                  <!-- Education 1 -->
+                  <div class="timeline-item">
+                    <h4 class="item-title">Front-End Developer Bootcamp</h4>
+                    <span class="item-period">2020</span>
+                    <span class="item-small">Nucamp Bootcamp.</span>
+                    <p class="item-description">On-Site Bootcamp.  Acquired certification in: Bootstrap, React, React.Native, MongoDB</p>
+                  </div>
+                  <!-- / Education 1 -->
+
+                  <!-- Education 2 -->
+                  <div class="timeline-item">
+                    <h4 class="item-title">Technical courses</h4>
+                    <span class="item-period">2008</span>
+                    <span class="item-small">Queens College</span>
+                    <p class="item-description">Continued education to learn more about QA, Web development, SQL and VB</p>
+                  </div>
+                  <!-- / Education 2 -->
+
+                  <!-- Education 3 -->
+                  <div class="timeline-item">
+                    <h4 class="item-title">Computer Science, A.A.</h4>
+                    <span class="item-period">2007</span>
+                    <span class="item-small">LaGuardia College of NY</span>
+                    <p class="item-description">Graduated with associate degree in Computer Science</p>
+                  </div>
+                  <!-- / Education 3 -->
+                </div>
+              </div>
             </div>
-          </a>
+
+            <div class="col-sm-6 col-md-6 col-lg-6">
+              <div class="block">
+                <div class="block-title">
+                  <h3>Experience</h3>
+                </div>
+
+                <div class="timeline">
+                  <!-- Experience 1 -->
+                  <div class="timeline-item">
+                    <h4 class="item-title">Front-End Developer</h4>
+                    <span class="item-period">2020</span>
+                    <span class="item-small">Soon</span>
+                    <p class="item-description">Lorem ipsum dolor sit amet consectetur, adipisicing elit.  distinctio reprehenderit?</p>
+                  </div>
+                  <!-- / Experience 1 -->
+
+                  <!-- Experience 2 -->
+                  <div class="timeline-item">
+                    <h4 class="item-title">Sr. QA Engineer</h4>
+                    <span class="item-period">Nov 2019 - Present</span>
+                    <span class="item-small">Asset-Map, LLC</span>
+                    <p class="item-description">Lorem ipsum dolor sit amet consectetur, adipisicing elit.  distinctio reprehenderit?</p>
+                  </div>
+                  <!-- / Experience 2 -->
+
+                  <!-- Experience 3 -->
+                  <div class="timeline-item">
+                    <h4 class="item-title">Lead, QA Engineer</h4>
+                    <span class="item-period">Apr 2015 - Oct 2019</span>
+                    <span class="item-small">Donnelle Financial</span>
+                    <p class="item-description">Lorem ipsum dolor sit amet consectetur adipisicing elit.</p>
+                  </div>
+                  <!-- / Experience 3 -->
+                </div>
+              </div>
+            </div>
+          </div>
+
+          <div class="row">
+            <div class="col-sm-6 col-md-6 col-lg-6">
+              <div class="block">
+                <div class="block-title">
+                  <h3>QA Automation <span>Skills</span></h3>
+                </div>
+
+                <div class="skills-info">
+                  <h4>Selenium</h4>                               
+                  <div class="skill-container">
+                    <div class="skill-percentage skill-1"></div>
+                  </div>
+
+                  <h4>Groovy</h4>
+                  <div class="skill-container">
+                    <div class="skill-percentage skill-2"></div>
+                  </div>
+
+                  <h4>API Testing</h4>
+                  <div class="skill-container">
+                    <div class="skill-percentage skill-3"></div>
+                  </div> 
+
+                  <h4>Katalon framework</h4>
+                  <div class="skill-container">
+                    <div class="skill-percentage skill-9"></div>
+                  </div> 
+                </div>
+
+              </div>
+            </div>
+
+            <div class="col-sm-6 col-md-6 col-lg-6">
+              <div class="block">
+                <div class="block-title">
+                  <h3>Coding <span>Skills</span></h3>
+                </div>
+
+                <div class="skills-info">
+                  <h4>HTML5</h4>                               
+                  <div class="skill-container">
+                    <div class="skill-percentage skill-4"></div>
+                  </div>
+
+                  <h4>CSS/SASS</h4>
+                  <div class="skill-container">
+                    <div class="skill-percentage skill-5"></div>
+                  </div>
+
+                  <h4>Bootstrap</h4>
+                  <div class="skill-container">
+                    <div class="skill-percentage skill-6"></div>
+                  </div> 
+
+                  <h4>React</h4>
+                  <div class="skill-container">
+                    <div class="skill-percentage skill-7"></div>
+                  </div> 
+                </div>
+                
+              </div>
+            </div>
+          </div>
+
+          <!-- Download Resume Button -->
+          <div class="row">
+            <div class="col-sm-12 col-md-12 col-lg-12">
+              <div class="block">
+                <div class="center download-resume">
+                  <a href="pdf/certification1.pdf" download="SamplePDF" class="btn btn-primary">Download Resume</a>
+                </div>
+              </div>
+            </div>
+          </div>
+          <!-- End of Download Resume Button -->
+
         </div>
       </div>
     </section>
-  </div>
+    <!-- End of Resume Subpage -->
 
-        <!-----   Search bar  ----------->
-        <div class="container w-50">
-          <div class="col">
-          <div class="input-group pl-0">
-            <div class="input-group-prepend">
-              <span class="input-group-text blue lighten-2" id="searchIcon"><i class="fa fa-search text-white"
-                  aria-hidden="true"></i></span>
-            </div>
-            <input class="form-control my-0 py-1" type="text" placeholder="Search" aria-label="Search">
+
+            <!-- Hobbies Subpage -->
+            <section class="pt-page" data-id="services">
+              <div class="section-inner custom-page-content">
+                <div class="page-header color-1">
+                  <h2>Hobbies</h2>
+                </div>
+                <div class="page-content">
+                  <!-- My hobbys -->
+                  <div class="row">
+                    <div class="col-sm-12 col-md-12">
+                      <div class="block-title">
+                        <h3>My <span>Hobbies</span></h3>
+                      </div>
+                    </div>
+
+                    <div class="col-sm-6 col-md-3">
+                      <div class="hobby-block"> 
+                        <div class="hobby-info">
+                         
+                          <div class="hobby-image">
+                            <img src="images/service/creativity_icon.png" alt="Responsive Design" class="mCS_img_loaded">
+                          </div>
+                          <h4>Coding</h4>
+                          <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor.</p>
+                        </div>
+                      </div>
+                    </div>
+
+                    <div class="col-sm-6 col-md-3">
+                      <div class="hobby-block"> 
+                        <div class="hobby-info">
+                          <div class="hobby-image">
+                            <img src="images/service/photography_icon.png" alt="Photography" class="mCS_img_loaded">
+                          </div>
+                          <h4>Photography</h4>
+                          <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor.</p>
+                        </div>
+                      </div>
+                    </div>
+
+                    <div class="col-sm-6 col-md-3">
+                      <div class="hobby-block"> 
+                        <div class="hobby-info">
+                          <div class="hobby-image">
+                            <img src="images/service/cooking_icon.png" alt="Cooking" class="mCS_img_loaded">
+                          </div>
+                          <h4>Cooking</h4>
+                          <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor.</p>
+                        </div>
+                      </div>
+                    </div>
+
+                    <div class="col-sm-6 col-md-3">
+                      <div class="hobby-block"> 
+                        <div class="hobby-info">
+                          <div class="hobby-image">
+                            <img src="images/service/advetising_icon.png" alt="Advetising" class="mCS_img_loaded">
+                          </div>
+                          <h4>Traveling</h4>
+                          <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor.</p>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                  <!-- End of My Hobbies -->
+                </div>
+              </div>
+            </section>
+            <!-- End of Hobbies Subpage -->
+
+
+            <!-- Portfolio Subpage -->
+            <section class="pt-page" data-id="portfolio">
+              <div class="section-inner custom-page-content">
+                <div class="page-header color-1">
+                  <h2>Portfolio</h2>
+                </div>
+                <div class="page-content">
+
+                  <!-- Portfolio Content -->
+                  <div class="portfolio-content">
+                                                 
+                    <!-- Portfolio Grid -->
+                    <div id="portfolio_grid" class="portfolio-grid portfolio-masonry masonry-grid-3">
+
+                      <!-- Portfolio Item 1 -->
+                      <figure class="item">
+                        <a class="ajax-page-load" href="portfolio-1.html">
+                          <img src="images/portfolio/1.jpg" alt="">
+                          <div>
+                            <h5 class="name">Project Name</h5>
+                            <small>Media</small>
+                            <i class="fa fa-file-text-o"></i>
+                          </div>
+                        </a>
+                      </figure>
+                      <!-- /Portfolio Item 1 -->
+
+                      <!-- Portfolio Item 3 -->
+                      <figure class="item">
+                        <a href="images/portfolio/full/3.jpg" class="lightbox" title="Duis Eu Eros Viverra">
+                          <img src="images/portfolio/3.jpg" alt="">
+                          <div>
+                            <h5 class="name">Project Name</h5>
+                            <small>Illustration</small>
+                            <i class="fa fa-image"></i>
+                          </div>
+                        </a>
+                      </figure>
+                      <!-- /Portfolio Item 3 -->
+
+                      <!-- Portfolio Item 4 -->
+                      <figure class="item">
+                        <a class="ajax-page-load" href="portfolio-2.html">
+                          <img src="images/portfolio/4.jpg" alt="">
+                          <div>
+                            <h5 class="name">Project Name</h5>
+                            <small>Media</small>
+                            <i class="fa fa-file-text-o"></i>
+                          </div>
+                        </a>
+                      </figure>
+                      <!-- /Portfolio Item 4 -->
+
+                      <!-- Portfolio Item 5 -->
+                      <figure class="item">
+                        <a href="images/portfolio/full/5.jpg" class="lightbox" title="Aliquam Condimentum Magna Rhoncus">
+                          <img src="images/portfolio/5.jpg" alt="">
+                          <div>
+                            <h5 class="name">Project Name</h5>
+                            <small>Illustration</small>
+                            <i class="fa fa-image"></i>
+                          </div>
+                        </a>
+                      </figure>
+                      <!-- /Portfolio Item 5 -->
+
+                      <!-- Portfolio Item 6 -->
+                      <figure class="item">
+                        <a class="ajax-page-load" href="portfolio-3.html">
+                          <img src="images/portfolio/6.jpg" alt="">
+                          <div>
+                            <h5 class="name">Project Name</h5>
+                            <small>Media</small>
+                            <i class="fa fa-file-text-o"></i>
+                          </div>
+                        </a>
+                      </figure>
+                      <!-- /Portfolio Item 6 -->
+
+                      <!-- Portfolio Item 7 -->
+                      <figure class="item">
+                        <a href="https://player.vimeo.com/video/97102654?autoplay=1" title="Nulla Facilisi" class="lightbox mfp-iframe">
+                          <img src="images/portfolio/7.jpg" alt="">
+                          <div>
+                            <h5 class="name">Project Name</h5>
+                            <small>Video</small>
+                            <i class="fa fa-video-camera"></i>
+                          </div>
+                        </a>
+                      </figure>
+                      <!-- /Portfolio Item 7 -->                                            
+                  </div>                 
+                </div>
+              </div>
+            </section>
+            <!-- /Portfolio Subpage -->
+
+            <!-- Contact Subpage -->
+            <section class="pt-page" data-id="contact">
+              <div class="section-inner custom-page-content">
+                <div class="page-header color-1">
+                  <h2>Contact</h2>
+                </div>
+                <div class="page-content">
+
+                  <div class="row">
+                    <div class="col-sm-6 col-md-6">
+                      <div class="block-title">
+                        <h3>Get in <span>Touch</span></h3>
+                      </div>
+
+                      <div class="contact-info-block">
+                        <div class="ci-icon">
+                          <i class="fa fa-map-marker"></i>
+                        </div>
+                        <div class="ci-text">
+                          <h5>Philadelphia, USA</h5>
+                        </div>
+                      </div>
+                      <div class="contact-info-block">
+                        <div class="ci-icon">
+                          <i class="fa fa-envelope"></i>
+                        </div>
+                        <div class="ci-text"><a href="mailto:ash822m@gmail.com">
+                          <h5>ash822m@gmail.com</h5></a>
+                        </div>
+                      </div>
+                      <div class="contact-info-block">
+                        <div class="ci-icon">
+                          <i class="fa fa-phone"></i>
+                        </div>
+                        <div class="ci-text">
+                          <a href="tel:+17185019252"><h5>(718) 501-9252</h5></a>
+                        </div>
+                      </div>
+                      <div class="contact-info-block">
+                        <div class="ci-icon">
+                          <i class="fab fa-linkedin"></i>
+                        </div>
+                        <div class="ci-text">
+                          <a href="https://www.linkedin.com/in/ashrafmadina/" target="_blank">LinkedIn</a>
+                        </div>
+                      </div>
+                    </div>
+
+                    <div class="col-sm-6 col-md-6">
+                      <div class="block-title">
+                        <h3>Contact <span>Form</span></h3>
+                      </div>
+                      <form id="contact-form" method="post" action="contact_form/contact_form.php">
+
+                        <div class="messages"></div>
+
+                        <div class="controls">
+                          <div class="form-group form-group-with-icon">
+                            <i class="fa fa-user"></i>
+                            <label>Full Name</label>
+                            <input id="form_name" type="text" name="name" class="form-control" placeholder required="required" data-error="Name is required.">
+                            <div class="form-control-border"></div>
+                            <div class="help-block with-errors"></div>
+                          </div>
+
+                          <div class="form-group form-group-with-icon">
+                            <i class="fa fa-envelope"></i>
+                            <label>Email Address</label>
+                            <input id="form_email" type="email" name="email" class="form-control" placeholder required="required" data-error="Valid email is required.">
+                            <div class="form-control-border"></div>
+                            <div class="help-block with-errors"></div>
+                          </div>
+
+                          <div class="form-group form-group-with-icon">
+                            <i class="fa fa-comment"></i>
+                            <label>Message for Me</label>
+                            <textarea id="form_message" name="message" class="form-control" placeholder rows="4" required="required" data-error="Please, leave me a message."></textarea>
+                            <div class="form-control-border"></div>
+                            <div class="help-block with-errors"></div>
+                          </div>
+
+                          <div class="g-recaptcha" data-sitekey="6LdqmCAUAAAAAMMNEZvn6g4W5e0or2sZmAVpxVqI"></div>
+
+                          <input type="submit" class="button btn-send" value="Send message">
+                        </div>
+                      </form>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </section>
+            <!-- End Contact Subpage -->
+
           </div>
         </div>
-       </div>
-        
-
-  <!------------- Footer ---------------->
-  <footer class="fixed-bottom bg-light">
-    <div class="footer-copyright text-center text-black-50 py-3">
-      <a class="fb-ic">
-        <i class="fa fa-facebook-f fa-lg blue-text mr-4"> </i>
-      </a>
-      <a class="tw-ic">
-        <i class="fa fa-twitter fa-lg mr-4"> </i>
-      </a>
-      <a class="yt-ic">
-        <i class="fa fa-youtube red-text fa-lg mr-4"> </i>
-      </a>
-      <a class="ins-ic">
-        <i class="fa fa-instagram fa-lg purple-text"> </i>
-      </a>
-
-      <!-- Copyright -->
-      <a class="footer-copyright ml-5 py-3">v1.1 |  ©2020 copyright ashraf madina</a>
+        <!-- /Page changer wrapper -->
+      </div>
+      <!-- /Main Content -->
     </div>
 
-  </footer>
- 
 
+    <footer>
+      <div class="copyrights">© 2020.  Ashraf Madina</div>
+    </footer>
 
-
-        <!-- jQuery first, then Popper.js, then the Bootstrap JavaScript plugins.-->
-        <script src="https://code.jquery.com/jquery-3.2.1.slim.min.js" integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN" crossorigin="anonymous"></script>
-        <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.9/umd/popper.min.js" integrity="sha384-ApNbgh9B+Y1QKtv3Rn7W3mgPxhU9K/ScQsAP7hUibX39j7fakFPskvXusvfa0b4Q" crossorigin="anonymous"></script>
-        <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js" integrity="sha384-JZR6Spejh4U02d8jOt6vLEHfe/JQGiRRSQQxSfFWpi1MquVdAyjUar5+76PVCmYl" crossorigin="anonymous"></script>
-          
-        <script src="JS/scripts.js"></script>
-
-</body>
-
+    <script type="text/javascript" src="js/bootstrap.min.js"></script>
+    <script type="text/javascript" src="js/pages-switcher.js"></script>
+    <script type="text/javascript" src="js/imagesloaded.pkgd.min.js"></script>
+    <script type="text/javascript" src="js/validator.js"></script>
+    <script type="text/javascript" src="js/jquery.shuffle.min.js"></script>
+    <script type="text/javascript" src="js/masonry.pkgd.min.js"></script>
+    <script type="text/javascript" src="js/owl.carousel.min.js"></script>
+    <script type="text/javascript" src="js/jquery.magnific-popup.min.js"></script>
+    <script type="text/javascript" src="js/jquery.hoverdir.js"></script>
+    <!--<script type="text/javascript" src="https://maps.googleapis.com/maps/api/js?key=YOUR-API-KEY"></script>-->
+    <script type="text/javascript" src="https://maps.googleapis.com/maps/api/js"></script>
+    <script type="text/javascript" src="js/jquery.googlemap.js"></script>
+    <script type="text/javascript" src="js/main.js"></script>
+  </body>
 </html>
