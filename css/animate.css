@@ -21,9 +21,31 @@
   -webkit-animation-name: fadeInLeft;
   animation-name: fadeInLeft;
 }
-.animated {
+.animated3 {
   -webkit-animation-duration: 2s;
   animation-duration: 2s;
+  -webkit-animation-fill-mode: both;
+  animation-fill-mode: both;
+}
+
+@keyframes fadeInRight {
+  0% {
+     opacity: 0;
+     transform: translateY(-200px);
+  }
+  100% {
+     opacity: 1;
+     transform: translateY(0);
+  }
+}   
+
+.fadeInRight {
+  -webkit-animation-name: fadeInRight;
+  animation-name: fadeInRight;
+}
+.animated2 {
+  -webkit-animation-duration: 2.5s;
+  animation-duration: 2.5s;
   -webkit-animation-fill-mode: both;
   animation-fill-mode: both;
 }
@@ -3365,4 +3387,45 @@
 /* 
  Floating Nav */
  .floating-menu {
-   border-radius:100px;z-index:999;padding-top:10px;padding-bottom:10px;left:0;position:fixed;display:inline-block;top:40%;-webkit-transform:translateY(-50%);-ms-transform:translateY(-50%);transform:translateY(-50%)}.main-menu{margin:0;padding-left:0;list-style:none}.main-menu li a{display:block;padding:20px;color:#fff;border-radius:50px;position:relative;-webkit-transition:none;-o-transition:none;transition:none}.main-menu li a:hover{background:rgba(244,244,244,.3)}.menu-bg{background-image:-webkit-linear-gradient(top,#1C5E91 0,#167699 100%);background-image:-o-linear-gradient(top,#1C5E91 0,#167699 100%);background-image:-webkit-gradient(linear,left top,left bottom,from(#1C5E91),to(#167699));background-image:linear-gradient(to bottom,#1C5E91 0,#167699 100%);background-repeat:repeat-x;position:absolute;width:100%;height:100%;border-radius:50px;z-index:-1;top:0;left:0;-webkit-transition:.1s;-o-transition:.1s;transition:.1s}.ripple{position:relative;overflow:hidden;transform:translate3d(0,0,0)}.ripple:after{content:"";display:block;position:absolute;width:100%;height:100%;top:0;left:0;pointer-events:none;background-image:radial-gradient(circle,#000 10%,transparent 10.01%);background-repeat:no-repeat;background-position:50%;transform:scale(10,10);opacity:0;transition:transform .5s,opacity 1s}.ripple:active:after{transform:scale(0,0);opacity:.2;transition:0s}
+   border-radius:100px;
+   z-index:999;
+   padding-top:10px;
+   padding-bottom:10px;
+   left:0;
+   position:fixed;
+   display:inline-block;
+   top:40%;
+   -webkit-transform:translateY(-50%);   
+   -ms-transform:translateY(-50%);
+   transform:translateY(-50%)
+  }
+
+  .main-menu{
+    margin:0;padding-left:0;list-style:none
+  }
+
+  .main-menu li a {
+    display:block;padding:20px;color:#fff;border-radius:50px;position:relative;-webkit-transition:none;-o-transition:none;transition:none
+  }
+
+  .main-menu li a:hover{
+    background:rgba(244, 244, 244, 0.3)
+  }
+
+  .menu-bg {
+    background-image:-webkit-linear-gradient(top,#1C5E91 0,#167699 100%);background-image:-o-linear-gradient(top,#1C5E91 0,#167699 100%);background-image:-webkit-gradient(linear,left top,left bottom,from(#1C5E91),to(#167699));background-image:linear-gradient(to bottom,#1C5E91 0,#167699 100%);background-repeat:repeat-x;position:absolute;width:100%;height:100%;border-radius:50px;z-index:-1;top:0;left:0;-webkit-transition:.1s;-o-transition:.1s;transition:.1s
+  }
+
+  .ripple {
+    position:relative;overflow:hidden;transform:translate3d(0,0,0)
+  }
+
+  .ripple:after {
+    content:"";display:block;position:absolute;width:100%;height:100%;top:0;left:0;pointer-events:none;background-image:radial-gradient(circle,#000 10%,transparent 10.01%);background-repeat:no-repeat;background-position:50%;transform:scale(10,10);opacity:0;transition:transform .5s,opacity 1s
+  }
+
+  .ripple:active:after {
+    transform:scale(0,0);opacity:.2;transition:0s
+    }
+
+    /* End of Floating Nav */

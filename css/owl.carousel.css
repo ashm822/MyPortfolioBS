@@ -12,22 +12,29 @@
   -webkit-tap-highlight-color: transparent;
   /* position relative and z-index fix webkit rendering fonts issue */
   position: relative;
-  z-index: 1; }
+  z-index: 1; 
+}
   .owl-carousel .owl-stage {
     position: relative;
-    -ms-touch-action: pan-Y; }
+    -ms-touch-action: pan-Y;
+   }
+
   .owl-carousel .owl-stage:after {
     content: ".";
     display: block;
     clear: both;
     visibility: hidden;
     line-height: 0;
-    height: 0; }
+    height: 0; 
+  }
+
   .owl-carousel .owl-stage-outer {
     position: relative;
     overflow: hidden;
     /* fix for flashing background */
-    -webkit-transform: translate3d(0px, 0px, 0px); }
+    -webkit-transform: translate3d(0px, 0px, 0px); 
+  }
+  
   .owl-carousel .owl-item {
     position: relative;
     min-height: 1px;
