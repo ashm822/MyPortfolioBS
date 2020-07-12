@@ -710,10 +710,6 @@ body > footer .copyrights {
   height: 2px;
   margin: 0 auto;
   background-color: #2196F3;
-  -webkit-transition: all 0.15s ease-in-out;
-  -moz-transition: all 0.15s ease-in-out;
-  -o-transition: all 0.15s ease-in-out;
-  -ms-transition: all 0.15s ease-in-out;
   transition: all 0.15s ease-in-out;
 }
 
@@ -733,7 +729,7 @@ body > footer .copyrights {
 /* Mobile menu toggle */
 .menu-toggle {
   display: block;
-  width: 50px;
+  width: 40px;
   margin: 0 4px;
   line-height: 50px;
   height: 50px;
@@ -1960,20 +1956,14 @@ body > footer .copyrights {
 
   .header {
     width: 100%;
-    max-width: 320px;
+    max-width: 220px;
     height: calc(100% - 50px);
     right: 0;
     top: 50px;
     z-index: 1001;
     overflow: auto;
     background-color: #2196F3;
-    -webkit-box-shadow: 0px 10px 10px 0px rgba(0,0,0,0.2);
-    -moz-box-shadow: 0px 10px 10px 0px rgba(0,0,0,0.2);
     box-shadow: 0px 10px 10px 0px rgba(0,0,0,0.2);
-    -webkit-transition: all 0.44s ease-in-out;
-    -moz-transition: all 0.44s ease-in-out;
-    -o-transition: all 0.44s ease-in-out;
-    -ms-transition: all 0.44s ease-in-out;
     transition: all 0.44s ease-in-out;
   }
 
