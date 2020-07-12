@@ -3394,9 +3394,7 @@
    left:0;
    position:fixed;
    display:inline-block;
-   top:40%;
-   -webkit-transform:translateY(-50%);   
-   -ms-transform:translateY(-50%);
+   top:30%;
    transform:translateY(-50%)
   }
 
@@ -3409,7 +3407,7 @@
   }
 
   .main-menu li a:hover{
-    background:rgba(244, 244, 244, 0.3)
+    color:coral
   }
 
   .menu-bg {
